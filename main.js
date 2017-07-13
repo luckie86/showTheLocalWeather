@@ -43,8 +43,16 @@ $(document).ready(function(){
                 }
             });
 
-
-            
+            // dynamically display background images accroding to temperature
+            if (cTemp > 30) {
+                $("body").css("background-image", "url(https://i.ytimg.com/vi/BQxBh-Oen1w/maxresdefault.jpg)");
+            } else if (cTemp > 20) {
+                $("body").css("background-image", "url(http://www.themarkeworld.com/wp-content/uploads/2015/12/Cloudy-Day.jpg)");
+            } else if (cTemp > 10) {
+                $("body").css("background-image", "url(http://www.centralpark.com/usr/photos/large/1f/a-sunny-day-on-a-cold-winter.jpg)");
+            } else if (cTemp > 0) {
+                $("body").css("background-image", "url(https://previews.123rf.com/images/elen/elen1310/elen131000064/22974771-Snowstorm-in-winter-park-scenery-with-trees-in-sunny-cold-day--Stock-Photo.jpg)");
+            }
     });
 
 
